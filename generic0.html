@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+
+<head>
+	<title>Data collection</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style media="screen">
+	figure {
+		text-align: center;
+	}
+	figcaption {
+		font-style: italic;
+		padding: 2px;
+		text-align: center;
+		font-weight: bold;
+	}
+	</style>
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1>Data collection</h1>
+			<p>Record the status of each trashcan</p>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Content -->
+			<section id="content" class="main">
+				<span class="image main"><img src="images/3.png" alt="" width=600px height=400px /></span>
+
+				<p>
+					In collecting data, I first applied detection sensors under self-made bins to simulate the filling process. The sensors started measuring each bin's status and decided if this bin was worth being picked up today. If yes, then sensor stored the data and sent it to my computer where a map object would be created that stored paths between valid bins. If no, then this bin had no need to be picked up and therefore skipped today's following procedures. Figure 5 illustrates the process described above.
+
+					<div class="img-container">
+						<figure>
+							<img src="images/f5.png" alt="" width="584">
+							<figcaption>Fig.5 -Flowchart of determining a bin to be picked or not</figcaption>
+						</figure>
+					</div>
+
+				</p>
+
+				<br>
+				<p>
+					Realizing that choosing a fixed route daily lies in the fact that drivers lack information about each trashcan's status, I proposed to use detection sensors installed on each trashcan and record the time and height of trash inside the bin in real time, such that I can get the most immediate feedbacks about bin's information. To do this, I bought Arduino Infra-red detection sensors which Ire installed on the simulated trash site and allows another device (my computer) to receive data through internet.
+					<div class="img-container">
+						<figure>
+							<img src="images/f6.png" alt="" width="321">
+							<figcaption>Fig.6 -Detection sensor installation</figcaption>
+						</figure>
+					</div>
+
+				</p>
+
+
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>Contact me</h2>
+				<p>Feel free to connect with me through social media listed on the right if you have any question or want to know more about this project</p>
+
+			</section>
+			<section>
+				<h2>Steven Liu</h2>
+
+				<ul class="icons">
+
+					<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+				</ul>
+			</section>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

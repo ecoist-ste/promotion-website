@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+
+<head>
+	<title>Analysis of results</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style media="screen">
+		figure {
+			text-align: center;
+		}
+
+		figcaption {
+			font-style: italic;
+			padding: 2px;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		.formula {
+			font-size: 20px;
+			font-style: italic;
+			padding: 1px;
+			text-align: center;
+			font-weight: 900;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1>Analysis of results</h1>
+			<p>Statistically examining the performance of the program</p>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Content -->
+			<section id="content" class="main">
+				<span class="image main"><img src="images/3.png" alt="" width=600px height=400px /></span>
+
+				<h2>1. Overall statistics about total distance and driving time </h2>
+				<p>I had set up 4 experiments with selection of 5 abodes each time and run the program. For each trial, I found its statistical variance, as the boxplot shown below.
+					Figure 12 analyzes statistics of routes' total driving distances.
+				<figure>
+					<img src="images/f17.png" alt="" width="590">
+					<figcaption>Fig.12 Analysis of driving distance</figcaption>
+				</figure>
+				According to figure 12, there are great variances in the distances among the four trials, given that each trial considers different neighborhoods.
+				<br><br>
+				Figure 13 analyzes statistics of routes' total driving time. The trial 1 clearly shows more widespread data points compare to others.
+				<figure>
+					<img src="images/f18.png" alt="" width="590">
+					<figcaption>Fig.13 Analysis of driving time</figcaption>
+				</figure>
+				</p>
+
+				<h2>2. Statistics about optimal, average, and worst routes</h2>
+				<p>Note: here I assume the speed of pickup truck is constant and equal to 7.5 mph, or 201 meters per minute. (This unit is chosen for convenience in the program's calculation) ((G.S., H.C., S., Jones, and E., 2016)
+				</p>
+
+				<h3>2.1 Total distance</h3>
+				<p>
+					Figure 14 analyzes the optimal and average route in each trial regarding their total travelled distance. Note that in order to better show the performance of the program, I conducted 15 more trials, in total of 20 trials during the following analysis.
+					<figure>
+						<img src="images/f19.png" alt="" width="590">
+						<figcaption>Fig.14 Analysis of the program's result related to driving distance</figcaption>
+					</figure>
+					The relatively transparent purple line connecting the optimal distance and average distance is their difference. Therefore, according to figure 16, for all of the trials, the optimal distance is always much shorter than the average distance. Note that the optimal distance is not always the shortest one since distance is only one of the two factors we need to consider.
+				</p>
+
+				<h3>2.2 Fuel consumption</h3>
+				<p>
+					Figure 15 analyzes the reduction in fuel consumption using optimal and average route in each trial.
+					<figure>
+						<img src="images/f20.png" alt="" width="590">
+						<figcaption>Fig.15 14 Analysis of routes' fuel consumptions</figcaption>
+					</figure>
+					According to figure 14, for most of the trials being conducted, the optimal route can save greater than 10 liters fuels per pickup day.  Only in 1 trial did the difference between optimal one's fuel consumption and the average's not exceed 5 liters.
+				</p>
+
+				<h3>2.3 CO2 emission</h3>
+				<p>
+					Figure 16 analyzes the CO2 emission of the optimal route in comparison to the average route and their difference, assuming the program lasts for one year and covers all China's residential area, as described in 5.3.5. Note that for sake of clarity of the graph, I only included four trials out of 20 trials I have simulated.
+					<figure>
+						<img src="images/f20.png" alt="" width="590">
+						<figcaption>Fig.16 Analysis of reduction in CO2 emission</figcaption>
+					</figure>
+					According to the figure, the CO2 emissions by optimal routes are significantly less than average route routes, and the mean reduction of CO2 emissions by optimal route compared to the average route (as shown by those purple bars) is approximately 425 kg per year. 
+				</p>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>Contact me</h2>
+				<p>Feel free to connect with me through social media listed on the right if you have any question or want to know more about this project</p>
+
+			</section>
+			<section>
+				<h2>Steven Liu</h2>
+
+				<ul class="icons">
+
+					<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+				</ul>
+			</section>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
